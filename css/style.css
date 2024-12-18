@@ -185,6 +185,56 @@ a:focus {
     z-index: 999;
 }
 
+/* Navbar Brand */
+.navbar-brand {
+    display: inline-block;
+    font-family: 'Brush Script MT', cursive; /* Updated font to match the cursive style */
+    font-weight: 700; /* Slightly bolder weight for emphasis */
+    font-size: 2.5rem; /* Increased font size for better visibility */
+    color: #1c4c90; /* Matching the blue color from the image */
+    text-decoration: none;
+    letter-spacing: 0.5px; /* Slight spacing for elegance */
+    line-height: 1.2;
+}
+
+/* Navbar Brand Initials */
+.navbar-brand .brand-initial {
+    font-size: 3rem; /* Slightly larger for emphasis */
+    font-weight: 700;
+    font-style: italic; /* Italicized to match the image style */
+    line-height: 1;
+    display: inline-block;
+    color: #1c4c90; /* Blue */
+}
+
+/* Navbar Brand Secondary Text */
+.navbar-brand .brand-ds {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: normal;
+    color: #1c4c90; /* Blue */
+    vertical-align: top;
+}
+
+/* Navbar Brand Additional Text */
+.navbar-brand .brand-text {
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif;
+    color: #000; /* Black or near black */
+    display: block;
+}
+
+/* Navbar Brand Subtext */
+.navbar-brand .brand-subtext {
+    font-size: 0.8rem;
+    font-family: 'Georgia', serif;
+    color: #1c4c90; /* Blue */
+    display: block;
+    margin-top: -8px;
+    letter-spacing: 0.5px;
+}
+
+/* Sticky Navbar Styling */
 .navbar.nav-sticky {
     position: fixed;
     top: 0;
@@ -193,20 +243,18 @@ a:focus {
     transition: .5s;
 }
 
-.navbar .navbar-brand {
-    margin: 0;
-    color: #ffffff;
-    font-size: 45px;
-    line-height: 0px;
-    font-weight: 200;
-    text-transform: uppercase;
+/* Navbar Brand on Sticky Background */
+.navbar.nav-sticky .navbar-brand {
+    color: #ffffff; /* White text for visibility on dark backgrounds */
 }
 
+/* Responsive Navbar Brand Image */
 .navbar .navbar-brand img {
     max-width: 100%;
     max-height: 40px;
 }
 
+/* Navbar Links Styling */
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -221,12 +269,14 @@ a:focus {
     transition: none;
 }
 
+/* Navbar Dropdown Menu */
 .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
     border-radius: 0;
     background: #f8f9fa;
 }
+
 
 @media (min-width: 992px) {
     .navbar {
